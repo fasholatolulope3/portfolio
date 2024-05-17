@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <title>my personal portfolio</title>
+    <link rel="icon" href="./assets/ICON.jpeg">
+</head>
+
+<body>
+    <nav id="desk-nav">
+        <div class="logo">☁♡⭒𝖳𝗈𝓁𝒖𝓁𝗈թ𝔢⭒♡☁</div>
+
+        <div>
+            <ul class="nav-link">
+                <li><a href="#About">About</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <nav id="ham-nav">
+        <div class="logo">☁♡⭒𝖳𝗈𝓁𝒖𝓁𝗈թ𝔢⭒♡☁</div>
+        <div class="ham-menu">
+            <div class="ham-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="link-menu">
+                <ul>
+                    <li><a href="#About" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experiences" onclick="toggleMenu()">Experiences</a></li>
+                    <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__profile-pic-containar">
+            <img src="./assets/profile-pic.jpg" alt="FASHOLA TOLULOPE profile pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text-p1">Hello, I'm</p>
+            <h1 class="title">FASHOLA TOLULOPE</h1>
+            <p class="section__text-p2">A Frontend Developer</p>
+            <div class="btn-containar">
+                <button class="btn btn-color-2" onclick="location.href='./#project'">Project </button>
+
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact info </button>
+            </div>
+            <div id="socials-containar">
+                <img src="./assets/linkedin.png" alt="my linkedin profile" class="icon"
+                    onclick="window.open('https://www.linkedin.com/in/fashola-tolulope-199911281', '_blank')">
+                <img src="./assets/github.png" alt="my github profile" class="icon"
+                    onclick="window.open('https://github.com/', '_blank')">
+            </div>
+        </div>
+    </section>
+    <section id="About">
+        <p class="title-6">Get To Know Me</p>
+        <h1 class="section__text-p3">About Me</h1>
+        <div class="section-containar">
+            <div class="section__containar-pic">
+                <img src="./assets/about-pic.jpg" alt="img" class="about-pic">
+            </div>
+            <div class="about-details-containar">
+                <div class="about-containars">
+                    <div class="details-containar">
+                        <img src="./assets/experience.png" alt="experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>1+ year <br>Frontend Developer</p>
+                    </div>
+                    <div class="details-containar">
+                        <img src="./assets/education.png" alt="education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>B.sc, A bachelor degree in computer science</p>
+                    </div>
+                </div>
+                <div class="text-containar">
+                    <p>A highly qualified and driven web developer with over one year of front-end development
+                        expertise, based in Nigeria, who produces software that is both scalable and of the highest
+                        quality for corporate needs. enthusiastic about creating websites that benefit society, the
+                        environment, and people.
+                        I'm passionate about using current web technologies to programme and implement design concepts
+                        into a functional website that will accelerate business growth.
+                        I'm willing to learn new skills and take on new challenges, and I appreciate working with
+                        different teams. I promise that with my abilities and commitment, I can contribute significantly
+                        to your company.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="arrow" onclick="location.href='./#experiences'">
+    </section>
+
+    <section id="experiences">
+        <p class="section__text-p3">Expore My</p>
+        <h1 class="title-6">Experiences</h1>
+        <div class="experience-details-containar">
+            <div class="about-containars">
+                <div class="details-containar">
+                    <h2 class="experience-sup-tittle">
+                        Frontend Developer
+                    </h2>
+                    <div class="article-containar">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>Html</div>
+                            <p>Experience</p>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>Css</div>
+                            <p>Experience</p>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>Bootstrap</div>
+                            <p>Intermediate</p>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>Javascript</div>
+                            <p>Basic</p>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-containar">
+                    <h2 class="experience-sup-tittle">
+                        Frontend Developer
+                    </h2>
+                    <div class="article-containar">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>React</div>
+                            <p>Intermediate</p>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>Git</div>
+                            <p>Experience</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="arrow" onclick="location.href='./#project'">
+    </section>
+
+    <section id="project">
+        <p class="section__text-p3">Browse My Recent</p>
+        <h1 class="title-6">Project</h1>
+        <div class="experience-details-containar">
+            <div class="about-containars">
+                <div class="details-containar color-containar">
+                    <div class="article-containar">
+                        <img src="./assets/Screenshot 2024-05-10 140725.png" alt="project-1" class="project-img">
+                    </div>
+                    <h2 class="experience-sup-tittle project-title">Project 1</h2>
+                    <div class="btn-containar">
+                        <button class=" btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/'">Github</button>
+                        <button class=" btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">live
+                            demo</button>
+                    </div>
+                </div>
+                <div class="details-containar color-containar">
+                    <div class="article-containar">
+                        <img src="./assets/Screenshot 2024-05-10 141410.png" alt="project-2" class="project-img">
+                    </div>
+                    <h2 class="experience-sup-tittle project-title">Project 2</h2>
+                    <div class="btn-containar">
+                        <button class=" btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/'">Github</button>
+                        <button class=" btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">live
+                            demo</button>
+                    </div>
+                </div>
+                <div class="details-containar color-containar">
+                    <div class="article-containar">
+                        <img src="./assets/project-3 .png" alt="project-3" class="project-img">
+                    </div>
+                    <h2 class="experience-sup-tittle project-title">Project 3</h2>
+                    <div class="btn-containar">
+                        <button class=" btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/'">Github</button>
+                        <button class=" btn btn-color-2 project-btn"
+                            onclick="location.href='https://fasholatolulope3.github.io/cgpa-calculator/'">live
+                            demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text-p3">Get in Touch</p>
+        <h1 class="title-6">Contact me</h1>
+        <div class="contact-info-upper-containar">
+            <div class="contact-info-containar">
+                <img src="./assets/email.png" alt="email icon" class="icon contact-icon email-icon">
+                <p> <a href="mailto:youremail@example.com">Send Email</a></p>
+            </div>
+            <div class="contact-info-containar">
+                <img src="./assets/linkedin.png" alt="link-menu icon" class="icon contact-icon">
+                <p> <a href="https://linkedin.com">linkedin</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-link-containar">
+                <ul class="nav-link">
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#experiences">Experiences</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>copyright &#169; 2024 Fashola Tolulope All Right Reserved</p>
+    </footer>
+    <!-- \end{code} -->
+    <script src="app.js"></script>
+</body>
+
+</html>

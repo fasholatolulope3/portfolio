@@ -1,0 +1,131 @@
+@media screen and (max-width: 1400px) {
+    #profile {
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+
+    .about-containars {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #desk-nav {
+        display: none;
+    }
+
+    #ham-nav {
+        display: flex;
+    }
+
+    #experience .experience-details-container {
+        margin-top: 2rem;
+    }
+
+    #profile,
+    .section-containar {
+        display: block;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    section,
+    .section-containar {
+        height: fit-content;
+    }
+
+    section {
+        margin: 0 5%;
+    }
+
+    .section__profile-pic-containar {
+        margin: 0 auto 2rem;
+        width: 275px;
+        height: 275px;
+
+    }
+
+    .section__containar-pic {
+        display: none;
+
+    }
+
+    .about-containars {
+        margin-top: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    #contact,
+    footer {
+        height: 40vh;
+    }
+
+    #profile {
+        height: 90vh;
+        margin-bottom: 0%;
+    }
+
+    article {
+        font-size: 1rem;
+    }
+
+    footer nav {
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+
+    .about-containars,
+    .contact-info-upper-containar,
+    .btn-containar {
+        flex-wrap: wrap;
+    }
+
+    .contact-info-containar {
+        margin: 3%;
+    }
+
+    .contact-info-containar p,
+    .nav-link li a {
+        font-size: 1rem;
+    }
+
+    .experience-sup-tittle {
+        font-size: 1.50rem;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .nav-link {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .section__profile-pic-containar {
+        justify-content: center;
+    }
+
+    .section__containar-pic {
+        display: none;
+    }
+
+    .section__text-p2 {
+        font-size: 1.25rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .text-containar {
+        text-align: justify;
+    }
+
+}
