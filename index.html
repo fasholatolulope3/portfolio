@@ -1,234 +1,472 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media.css">
-    <title>my personal portfolio</title>
-    <link rel="icon" href="./assets/ICON.jpeg">
+    <link rel="icon" type="image/png" href="./fashdev.jpg" style="border-radius: 50%;
+            overflow: hidden;">
+    <title>
+         Fashola Tolulope - Web Developer Portfolio
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
-
 <body>
-    <nav id="desk-nav">
-        <div class="logo">☁♡⭒𝖳𝗈𝓁𝒖𝓁𝗈թ𝔢⭒♡☁</div>
-
-        <div>
-            <ul class="nav-link">
-                <li><a href="#About">About</a></li>
-                <li><a href="#experiences">Experiences</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-
-            </ul>
-        </div>
-    </nav>
-    <nav id="ham-nav">
-        <div class="logo">☁♡⭒𝖳𝗈𝓁𝒖𝓁𝗈թ𝔢⭒♡☁</div>
-        <div class="ham-menu">
-            <div class="ham-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="link-menu">
-                <ul>
-                    <li><a href="#About" onclick="toggleMenu()">About</a></li>
-                    <li><a href="#experiences" onclick="toggleMenu()">Experiences</a></li>
-                    <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
-                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    <!-- Header Section -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo">Fash<span>Dev</span></a>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
-            </div>
+                
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
         </div>
-    </nav>
-    <section id="profile">
-        <div class="section__profile-pic-containar">
-            <img src="./assets/profile-pic.jpg" alt="FASHOLA TOLULOPE profile pic">
-        </div>
-        <div class="section__text">
-            <p class="section__text-p1">Hello, I'm</p>
-            <h1 class="title">FASHOLA TOLULOPE</h1>
-            <p class="section__text-p2">A Frontend Developer</p>
-            <div class="btn-containar">
-                <button class="btn btn-color-2" onclick="location.href='./#project'">Project </button>
+    </header>
 
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact info </button>
-            </div>
-            <div id="socials-containar">
-                <img src="./assets/linkedin.png" alt="my linkedin profile" class="icon"
-                    onclick="window.open('https://www.linkedin.com/in/fashola-tolulope-199911281', '_blank')">
-                <img src="./assets/github.png" alt="my github profile" class="icon"
-                    onclick="window.open('https://github.com/', '_blank')">
-            </div>
-        </div>
-    </section>
-    <section id="About">
-        <p class="title-6">Get To Know Me</p>
-        <h1 class="section__text-p3">About Me</h1>
-        <div class="section-containar">
-            <div class="section__containar-pic">
-                <img src="./assets/about-pic.jpg" alt="img" class="about-pic">
-            </div>
-            <div class="about-details-containar">
-                <div class="about-containars">
-                    <div class="details-containar">
-                        <img src="./assets/experience.png" alt="experience icon" class="icon">
-                        <h3>Experience</h3>
-                        <p>1+ year <br>Frontend Developer</p>
-                    </div>
-                    <div class="details-containar">
-                        <img src="./assets/education.png" alt="education icon" class="icon">
-                        <h3>Education</h3>
-                        <p>B.sc, A bachelor degree in computer science</p>
-                    </div>
-                </div>
-                <div class="text-containar">
-                    <p>A highly qualified and driven web developer with over one year of front-end development
-                        expertise, based in Nigeria, who produces software that is both scalable and of the highest
-                        quality for corporate needs. enthusiastic about creating websites that benefit society, the
-                        environment, and people.
-                        I'm passionate about using current web technologies to programme and implement design concepts
-                        into a functional website that will accelerate business growth.
-                        I'm willing to learn new skills and take on new challenges, and I appreciate working with
-                        different teams. I promise that with my abilities and commitment, I can contribute significantly
-                        to your company.
-                    </p>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h3 class="hero-subtitle">Hello, I'm</h3>
+                <h1 class="hero-title">Fashola Tolulope</h1>
+                <p class="hero-text">A passionate Web Developer specializing in creating innovative, responsive, and user-friendly websites and applications. With expertise in HTML, CSS, JavaScript, PHP, Bootstrap, and Laravel.</p>
+                <div class="hero-btns">
+                    <a href="https://abdulsalamshehu.com.ng/" class="btn">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="arrow icon" class="arrow" onclick="location.href='./#experiences'">
     </section>
 
-    <section id="experiences">
-        <p class="section__text-p3">Expore My</p>
-        <h1 class="title-6">Experiences</h1>
-        <div class="experience-details-containar">
-            <div class="about-containars">
-                <div class="details-containar">
-                    <h2 class="experience-sup-tittle">
-                        Frontend Developer
-                    </h2>
-                    <div class="article-containar">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>Html</div>
-                            <p>Experience</p>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>Css</div>
-                            <p>Experience</p>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>Bootstrap</div>
-                            <p>Intermediate</p>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>Javascript</div>
-                            <p>Basic</p>
-                        </article>
-                    </div>
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <h2 class="section-title text-center">About Me</h2>
+            <p class="section-subtitle text-center">Learn more about me, my background, and what I do</p>
+            
+            <div class="about-content">
+                <div class="about-img fade-in">
+                    <img src="./fashdev.jpg " alt="fashola-tolulope" style="width: 100%; height: auto; border-radius: var(--border-radius); box-shadow: var(--box-shadow);">
+                    <!-- <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='600' viewBox='0 0 600 600'><rect width='600' height='600' fill='%232d46b9'/><circle cx='300' cy='230' r='100' fill='%23f8f9fa'/><circle cx='300' cy='500' r='200' fill='%23f8f9fa'/></svg>" alt="Fashola Tolulope"> -->
                 </div>
-                <div class="details-containar">
-                    <h2 class="experience-sup-tittle">
-                        Frontend Developer
-                    </h2>
-                    <div class="article-containar">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>React</div>
-                            <p>Intermediate</p>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>Git</div>
-                            <p>Experience</p>
-                        </article>
+                
+                <div class="about-text fade-in">
+                    <h3>Web Developer & Technical Support Specialist</h3>
+                    <p>I am Fashola Tolulope, a skilled web developer with a passion for creating beautiful, functional, and user-centered digital experiences. With a strong foundation in both front-end and back-end technologies, I develop comprehensive web solutions that help businesses achieve their goals.</p>
+                    <p>Beyond development, I provide essential technical support for AI training workshops at major academic conferences, ensuring smooth technical execution and effective learning experiences for participants.</p>
+                    
+                    <div class="skills">
+                        <h4>My Skills</h4>
+                        <div class="skill-bars">
+                            <div>
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML5 & CSS3</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="skill-info">
+                                    <span class="skill-name">PHP</span>
+                                    <span class="skill-percentage">60%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="skill-info">
+                                    <span class="skill-name">Bootstrap</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="skill-info">
+                                    <span class="skill-name">Laravel</span>
+                                    <span class="skill-percentage">50%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="arrow icon" class="arrow" onclick="location.href='./#project'">
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section" id="services">
+        <div class="container">
+            <h2 class="section-title text-center">My Services</h2>
+            <p class="section-subtitle text-center">What I can offer to my clients</p>
+            
+            <div class="services-container">
+                <div class="service-box fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="service-title">Web Development</h3>
+                    <p class="service-text">Custom website development using the latest technologies to create responsive, fast, and secure websites tailored to your specific needs.</p>
+                </div>
+                
+                <div class="service-box fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="service-title">Web Design</h3>
+                    <p class="service-text">Creating visually appealing and user-friendly interfaces that enhance user experience and effectively communicate your brand's message.</p>
+                </div>
+                
+                <div class="service-box fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="service-title">Responsive Design</h3>
+                    <p class="service-text">Building websites that work seamlessly across all devices and screen sizes, from desktops to smartphones.</p>
+                </div>
+                
+                <div class="service-box fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="service-title">Back-End Development</h3>
+                    <p class="service-text">Development of robust server-side applications and APIs using PHP and Laravel to power your web applications.</p>
+                </div>
+                
+                <div class="service-box fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="service-title">AI Workshop Support</h3>
+                    <p class="service-text">Technical support for AI training workshops at academic conferences, ensuring smooth execution and effective learning experiences.</p>
+                </div>
+                
+                <div class="service-box fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="service-title">Website Maintenance</h3>
+                    <p class="service-text">Regular updates, security patches, and technical support to keep your website running smoothly and securely.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="project">
-        <p class="section__text-p3">Browse My Recent</p>
-        <h1 class="title-6">Project</h1>
-        <div class="experience-details-containar">
-            <div class="about-containars">
-                <div class="details-containar color-containar">
-                    <div class="article-containar">
-                        <img src="./assets/Screenshot 2024-05-10 140725.png" alt="project-1" class="project-img">
-                    </div>
-                    <h2 class="experience-sup-tittle project-title">Project 1</h2>
-                    <div class="btn-containar">
-                        <button class=" btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/'">Github</button>
-                        <button class=" btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">live
-                            demo</button>
-                    </div>
-                </div>
-                <div class="details-containar color-containar">
-                    <div class="article-containar">
-                        <img src="./assets/Screenshot 2024-05-10 141410.png" alt="project-2" class="project-img">
-                    </div>
-                    <h2 class="experience-sup-tittle project-title">Project 2</h2>
-                    <div class="btn-containar">
-                        <button class=" btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/'">Github</button>
-                        <button class=" btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">live
-                            demo</button>
+    <!-- Portfolio Section -->
+    <section class="portfolio section" id="portfolio">
+        <div class="container">
+            <h2 class="section-title text-center">My Portfolio</h2>
+            <p class="section-subtitle text-center">Some of my most recent work</p>
+            
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="design">Web Design</button>
+                <button class="filter-btn" data-filter="app">Applications</button>
+            </div>
+            
+            <div class="portfolio-container">
+                <div class="portfolio-item fade-in" data-category="web">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'><rect width='600' height='400' fill='%23f8f9fa'/><rect x='50' y='50' width='500' height='50' fill='%232d46b9'/><rect x='50' y='120' width='500' height='230' fill='%23e9ecef'/></svg>" class="portfolio-img" alt="E-commerce Website">
+                    <div class="portfolio-info">
+                        <h3 class="portfolio-title">School management System</h3>
+                        <p class="portfolio-category">Web Development</p>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="portfolio-link"><i class="fas fa-search"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="details-containar color-containar">
-                    <div class="article-containar">
-                        <img src="./assets/project-3 .png" alt="project-3" class="project-img">
+                
+                <div class="portfolio-item fade-in" data-category="design">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'><rect width='600' height='400' fill='%23f8f9fa'/><circle cx='300' cy='200' r='150' fill='%232d46b9'/><rect x='200' y='150' width='200' height='100' fill='%23f8f9fa'/></svg>" class="portfolio-img" alt="Corporate Branding">
+                    <div class="portfolio-info">
+                        <h3 class="portfolio-title">Corporate Branding</h3>
+                        <p class="portfolio-category">Web Design</p>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="portfolio-link"><i class="fas fa-search"></i></a>
+                        </div>
                     </div>
-                    <h2 class="experience-sup-tittle project-title">Project 3</h2>
-                    <div class="btn-containar">
-                        <button class=" btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/'">Github</button>
-                        <button class=" btn btn-color-2 project-btn"
-                            onclick="location.href='https://fasholatolulope3.github.io/cgpa-calculator/'">live
-                            demo</button>
+                </div>
+                
+                <div class="portfolio-item fade-in" data-category="app">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'><rect width='600' height='400' fill='%23f8f9fa'/><rect x='150' y='50' width='300' height='300' rx='20' fill='%232d46b9'/><circle cx='300' cy='200' r='50' fill='%23f8f9fa'/></svg>" class="portfolio-img" alt="Mobile Application">
+                    <div class="portfolio-info">
+                        <h3 class="portfolio-title">Mobile Application</h3>
+                        <p class="portfolio-category">Application</p>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="portfolio-link"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item fade-in" data-category="web">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'><rect width='600' height='400' fill='%23f8f9fa'/><rect x='50' y='50' width='500' height='300' fill='%23e9ecef'/><rect x='100' y='100' width='400' height='40' fill='%232d46b9'/><rect x='100' y='160' width='400' height='20' fill='%23cbd3e1'/><rect x='100' y='200' width='400' height='20' fill='%23cbd3e1'/><rect x='100' y='240' width='400' height='20' fill='%23cbd3e1'/></svg>" class="portfolio-img" alt="Blog Platform">
+                    <div class="portfolio-info">
+                        <h3 class="portfolio-title">Abdulsalam Shehu Jaji portfolio</h3>
+                        <p class="portfolio-category">Web Development</p>
+                        <div class="portfolio-links">
+                            <a href="https://abdulsalamshehu.com.ng/" class="portfolio-link"><i class="fas fa-link"></i></a>
+                            <a href="https://abdulsalamshehu.com.ng/" class="portfolio-link"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item fade-in" data-category="design">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'><rect width='600' height='400' fill='%23f8f9fa'/><polygon points='300,50 550,300 50,300' fill='%232d46b9'/><circle cx='300' cy='150' r='30' fill='%23f8f9fa'/></svg>" class="portfolio-img" alt="Logo Design">
+                    <div class="portfolio-info">
+                        <h3 class="portfolio-title">Logo Design</h3>
+                        <p class="portfolio-category">Web Design</p>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="portfolio-link"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item fade-in" data-category="app">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'><rect width='600' height='400' fill='%23f8f9fa'/><rect x='100' y='50' width='400' height='300' rx='10' fill='%23e9ecef'/><rect x='150' y='100' width='300' height='200' fill='%232d46b9'/><circle cx='200' cy='150' r='20' fill='%23f8f9fa'/><rect x='240' y='140' width='170' height='20' fill='%23f8f9fa'/><rect x='240' y='180' width='170' height='20' fill='%23f8f9fa'/><rect x='240' y='220' width='170' height='20' fill='%23f8f9fa'/></svg>" class="portfolio-img" alt="Dashboard Interface">
+                    <div class="portfolio-info">
+                        <h3 class="portfolio-title">Dashboard Interface</h3>
+                        <p class="portfolio-category">Application</p>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="portfolio-link"><i class="fas fa-search"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="arrow icon" class="arrow" onclick="location.href='./#contact'">
     </section>
-    <section id="contact">
-        <p class="section__text-p3">Get in Touch</p>
-        <h1 class="title-6">Contact me</h1>
-        <div class="contact-info-upper-containar">
-            <div class="contact-info-containar">
-                <img src="./assets/email.png" alt="email icon" class="icon contact-icon email-icon">
-                <p> <a href="mailto:youremail@example.com">Send Email</a></p>
-            </div>
-            <div class="contact-info-containar">
-                <img src="./assets/linkedin.png" alt="link-menu icon" class="icon contact-icon">
-                <p> <a href="https://linkedin.com">linkedin</a></p>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section" id="testimonials">
+        <div class="container">
+            <h2 class="section-title text-center">Testimonials</h2>
+            <p class="section-subtitle text-center">What my clients say about me</p>
+            
+            <div class="testimonials-container">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"Fashola delivered an exceptional website for our business. His technical expertise and attention to detail resulted in a website that not only looks great but also performs excellently. He was responsive, patient, and professional throughout the project."</p>
+                        <div class="testimonial-author">
+                            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'><circle cx='100' cy='100' r='100' fill='%232d46b9'/><circle cx='100' cy='85' r='40' fill='%23f8f9fa'/><circle cx='100' cy='180' r='60' fill='%23f8f9fa'/></svg>" alt="Client" class="testimonial-author-img">
+                            <div class="testimonial-author-info">
+                                <h4>Abdulsalam Shehu Jaji</h4>
+                                <p>Chief Executive Officer | Business Administrator | Economic Strategist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"Working with Fashola on our AI training workshop was a great experience. His technical support was invaluable, ensuring everything ran smoothly. His understanding of both web development and AI made him an ideal partner for our academic conference."</p>
+                        <div class="testimonial-author">
+                            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'><circle cx='100' cy='100' r='100' fill='%232d46b9'/><circle cx='100' cy='85' r='40' fill='%23f8f9fa'/><circle cx='100' cy='180' r='60' fill='%23f8f9fa'/></svg>" alt="Client" class="testimonial-author-img">
+                            <div class="testimonial-author-info">
+                                <h4>Dr. Hameed Olalekan Bolaji</h4>
+                                <p>Conference Organizer, Al-Hikmah University</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"Fashola completely transformed our outdated website into a modern, responsive platform that has significantly improved our online presence. His expertise in both design and functionality created a seamless user experience that our customers love."</p>
+                        <div class="testimonial-author">
+                            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'><circle cx='100' cy='100' r='100' fill='%232d46b9'/><circle cx='100' cy='85' r='40' fill='%23f8f9fa'/><circle cx='100' cy='180' r='60' fill='%23f8f9fa'/></svg>" alt="Client" class="testimonial-author-img">
+                            <div class="testimonial-author-info">
+                                <h4>Michael Brown</h4>
+                                <p>Marketing Director, Global Retail</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                
+                <div class="testimonial-controls">
+                    <span class="testimonial-control active" data-slide="0"></span>
+                    <span class="testimonial-control" data-slide="1"></span>
+                    <span class="testimonial-control" data-slide="2"></span>
+                </div>
             </div>
         </div>
     </section>
-    <footer>
-        <nav>
-            <div class="nav-link-containar">
-                <ul class="nav-link">
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#experiences">Experiences</a></li>
-                    <li><a href="#project">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+
+    <!-- Experience Section -->
+    <section class="experience section" id="experience">
+        <div class="container">
+            <h2 class="section-title text-center">Experience</h2>
+            <p class="section-subtitle text-center">My professional journey and achievements</p>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 - Present</span>
+                        <h3 class="timeline-title">Technical Support Specialist</h3>
+                        <h4 class="timeline-subtitle">AI Training Workshops</h4>
+                        <p>Providing essential technical support for AI training workshops at major academic conferences and events, ensuring smooth technical execution and effective learning experiences for participants.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025 - Present</span>
+                        <h3 class="timeline-title">Freelance Web Developer</h3>
+                        <h4 class="timeline-subtitle">Self-employed</h4>
+                        <p>Designing and developing custom websites and applications for a diverse range of clients, using HTML, CSS, JavaScript, PHP, Bootstrap, and Laravel.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024</span>
+                        <h3 class="timeline-title">Technical Support Lead</h3>
+                        <h4 class="timeline-subtitle">10th SSTE Hybrid International Conference</h4>
+                        <p>Led technical support for the conference at Federal University of Technology, Minna, ensuring smooth execution of all technical aspects including presentations and virtual participation.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024</span>
+                        <h3 class="timeline-title">Technical Coordinator</h3>
+                        <h4 class="timeline-subtitle">6th International Conference on Innovation</h4>
+                        <p>Coordinated technical requirements for the conference at Al-Hikmah University, supporting workshops on Artificial Intelligence and ensuring seamless technology integration.</p>
+                    </div>
+                </div>
             </div>
-        </nav>
-        <p>copyright &#169; 2024 Fashola Tolulope All Right Reserved</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <h2 class="section-title text-center">Contact Me</h2>
+            <p class="section-subtitle text-center">Get in touch with me for your projects</p>
+            
+            <div class="contact-info">
+                <div class="contact-item fade-in">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h4>Location</h4>
+                    <p>Kwara State, Nigeria</p>
+                </div>
+                
+                <div class="contact-item fade-in">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h4>Email</h4>
+                    <a href="mailto:contact@fasholadev.com">fashdev@gmail.com</a>
+                </div>
+                
+                <div class="contact-item fade-in">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h4>Phone</h4>
+                    <a href="tel:+2349012345678">+234 9043036911</a>
+                </div>
+            </div>
+            
+            <div class="contact-form fade-in">
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Your Message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <a href="#home" class="footer-logo">Fash<span>Dev</span></a>
+            
+            <div class="footer-social">
+                <a href="https://web.facebook.com/tolulope.oladapo" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <!-- <a href="#" class="social-link"><i class="fab fa-twitter"></i></a> -->
+                <a href="https://www.instagram.com/fash_299/" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/fashola-tolulope-199911281/" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/fasholatolulope3" class="social-link"><i class="fab fa-github"></i></a>
+            </div>
+            
+            <div class="footer-links">
+                <a href="#home" class="footer-link">Home</a>
+                <a href="#about" class="footer-link">About</a>
+                <a href="#services" class="footer-link">Services</a>
+                <a href="#portfolio" class="footer-link">Portfolio</a>
+                <a href="#experience" class="footer-link">Experience</a>
+                <a href="#contact" class="footer-link">Contact</a>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 FashDev. All Rights Reserved.</p>
+            </div>
+        </div>
     </footer>
-    <!-- \end{code} -->
-    <script src="app.js"></script>
-</body>
 
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="./app.js"></script>
+</body>
 </html>
