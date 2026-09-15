@@ -367,6 +367,11 @@ section { padding: 96px 0; }
 .project-media img { width: 100%; height: 100%; object-fit: cover; }
 .project-media-inner { display: flex; flex-direction: column; align-items: center; gap: 8px; color: var(--text-muted); font-size: 0.85rem; font-weight: 600; }
 .project-media-inner i { font-size: 1.6rem; }
+.project-media.has-image {
+    aspect-ratio: auto; max-height: 460px; padding: 24px 0; border-style: solid; border-color: var(--border);
+    background: linear-gradient(180deg, var(--surface-alt), var(--surface));
+}
+.project-media.has-image img { width: auto; height: 100%; max-height: 412px; object-fit: contain; border-radius: 14px; box-shadow: var(--shadow); }
 
 .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
 .project-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; transition: all 0.2s ease; }
@@ -721,8 +726,8 @@ section { padding: 96px 0; }
 
         <div class="projects-flagship">
             <article class="project-flagship fade-in" data-tags="fullstack mobile backend">
-                <div class="project-media">
-                    <div class="project-media-inner"><i class="fas fa-image" aria-hidden="true"></i><span>Vemre screenshots coming soon</span></div>
+                <div class="project-media has-image">
+                    <img src="assets/vemre-invoice-screenshot.png" alt="Vemre mobile app screenshot: Generate Invoice screen with Stripe payment method, customer, amount, and description fields" loading="lazy">
                 </div>
                 <div>
                     <div class="project-eyebrow">Fintech &middot; Flagship Project</div>
