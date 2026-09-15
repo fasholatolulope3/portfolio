@@ -17,7 +17,7 @@
 <meta name="twitter:title" content="Fashola Tolulope | Software Engineer">
 <meta name="twitter:description" content="Full-Stack Software Engineer with 3+ years shipping production web and mobile applications. Open to remote and international roles.">
 <meta name="twitter:image" content="fashdev.jpg">
-<title>Fashola Tolulope | Software Engineer | PHP & Laravel Developer</title>
+<title>Fashola Tolulope | Full-Stack Engineer | Node.js · TypeScript · React Native</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%234f46e5'/%3E%3Ctext x='32' y='42' font-family='JetBrains Mono,monospace' font-size='30' font-weight='700' fill='white' text-anchor='middle'%3E%7B%7D%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -359,6 +359,15 @@ section { padding: 96px 0; }
 .project-highlights li { padding-left: 16px; position: relative; }
 .project-highlights li::before { content: '\2192'; position: absolute; left: 0; color: var(--accent); }
 
+.project-media {
+    grid-column: 1 / -1; aspect-ratio: 16 / 6; border-radius: var(--radius); overflow: hidden;
+    background: var(--surface-alt); border: 1px dashed var(--border-strong);
+    display: flex; align-items: center; justify-content: center;
+}
+.project-media img { width: 100%; height: 100%; object-fit: cover; }
+.project-media-inner { display: flex; flex-direction: column; align-items: center; gap: 8px; color: var(--text-muted); font-size: 0.85rem; font-weight: 600; }
+.project-media-inner i { font-size: 1.6rem; }
+
 .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
 .project-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; transition: all 0.2s ease; }
 .project-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); }
@@ -388,6 +397,33 @@ section { padding: 96px 0; }
 .modal-section li { padding-left: 16px; position: relative; }
 .modal-section li::before { content: '\2013'; position: absolute; left: 0; color: var(--text-muted); }
 .modal-actions { display: flex; gap: 12px; margin-top: 26px; flex-wrap: wrap; }
+
+/* Case Study */
+.case-study-section { background: var(--surface-alt); }
+.case-study-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 48px; align-items: start; }
+.case-study-block { margin-bottom: 26px; }
+.case-study-block:last-child { margin-bottom: 0; }
+.case-study-block h5 { font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent); margin-bottom: 8px; font-weight: 700; }
+.case-study-block p { color: var(--text-secondary); font-size: 0.95rem; }
+.case-study-stats { display: flex; flex-direction: column; gap: 16px; }
+.case-stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; text-align: center; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.case-stat-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-hover); }
+.case-stat-card .num { font-size: 2rem; font-weight: 800; color: var(--accent); }
+.case-stat-card .label { font-size: 0.85rem; color: var(--text-muted); margin-top: 4px; }
+
+/* Testimonials */
+.testimonial-card {
+    max-width: 640px; margin: 0 auto; background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius-lg); padding: 40px; text-align: center;
+}
+.testimonial-quote { font-size: 1.1rem; font-style: italic; color: var(--text-secondary); margin-bottom: 22px; }
+.testimonial-quote::before { content: '\201C'; } .testimonial-quote::after { content: '\201D'; }
+.testimonial-avatar {
+    width: 52px; height: 52px; border-radius: 50%; background: var(--accent-soft); color: var(--accent);
+    display: flex; align-items: center; justify-content: center; font-size: 1.1rem; margin: 0 auto 14px;
+}
+.testimonial-name { font-weight: 700; }
+.testimonial-role { font-size: 0.85rem; color: var(--text-muted); margin-top: 2px; }
 
 /* Education & Certifications */
 .education-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 32px; }
@@ -479,6 +515,9 @@ section { padding: 96px 0; }
     .about-grid { grid-template-columns: 1fr; gap: 60px; }
     .about-image-wrap { max-width: 340px; margin: 0 auto; }
     .project-flagship { grid-template-columns: 1fr; }
+    .case-study-grid { grid-template-columns: 1fr; gap: 32px; }
+    .case-study-stats { flex-direction: row; flex-wrap: wrap; }
+    .case-stat-card { flex: 1 1 200px; }
     .education-grid { grid-template-columns: 1fr; }
     .contact-grid { grid-template-columns: 1fr; }
     .footer-grid { grid-template-columns: 1fr 1fr; }
@@ -553,8 +592,8 @@ section { padding: 96px 0; }
     <div class="container hero-content">
         <div class="hero-text fade-in">
             <div class="hero-badge"><span class="dot"></span> Open to Remote &amp; International Roles</div>
-            <h1 class="hero-title">Software Engineer building <span class="accent">scalable, production-ready</span> digital solutions.</h1>
-            <p class="hero-description">I'm Fashola Tolulope — a full-stack engineer with 3+ years shipping production web and mobile software across the TypeScript/Node.js and PHP/Laravel ecosystems. I design backend systems, REST APIs, and admin platforms, and build the React, Next.js, and Vue.js interfaces that sit on top of them.</p>
+            <h1 class="hero-title">I build the backend, the frontend, and <span class="accent">the app — and ship it.</span></h1>
+            <p class="hero-description">Full-Stack Engineer specialising in Node.js, TypeScript, and React Native. I've shipped a fintech platform serving 600+ users that has processed over $50,000 in payments — built solo, from zero, in 3 months.</p>
             <div class="hero-buttons">
                 <a href="#projects" class="btn btn-primary"><i class="fas fa-briefcase" aria-hidden="true"></i> View My Work</a>
                 <a href="#contact" class="btn btn-secondary"><i class="fas fa-paper-plane" aria-hidden="true"></i> Let's Work Together</a>
@@ -566,9 +605,9 @@ section { padding: 96px 0; }
                 <a href="assets/Fashola_Tolulope_Resume.pdf" target="_blank" rel="noopener" class="hero-link"><i class="fas fa-file-arrow-down" aria-hidden="true"></i> Resume</a>
             </div>
             <div class="hero-stats">
-                <div><div class="stat-number">3+</div><div class="stat-label">Years Experience</div></div>
-                <div><div class="stat-number">15+</div><div class="stat-label">Projects Completed</div></div>
-                <div><div class="stat-number">100%</div><div class="stat-label">Client Satisfaction</div></div>
+                <div><div class="stat-number">600+</div><div class="stat-label">Platform Users</div></div>
+                <div><div class="stat-number">$50,000+</div><div class="stat-label">Processed</div></div>
+                <div><div class="stat-number">3 Months</div><div class="stat-label">to Production</div></div>
             </div>
         </div>
 
@@ -682,14 +721,17 @@ section { padding: 96px 0; }
 
         <div class="projects-flagship">
             <article class="project-flagship fade-in" data-tags="fullstack mobile backend">
+                <div class="project-media">
+                    <div class="project-media-inner"><i class="fas fa-image" aria-hidden="true"></i><span>Vemre screenshots coming soon</span></div>
+                </div>
                 <div>
                     <div class="project-eyebrow">Fintech &middot; Flagship Project</div>
                     <h3>Vemre &mdash; Freelancer Payments &amp; Remittance Platform</h3>
-                    <p class="project-desc">Fintech platform enabling freelancers to receive international payments and cash out to Nigerian bank accounts in NGN, with KYC verification, tiered membership, and admin-managed compliance controls. Deployed on Vercel, serving live users.</p>
+                    <p class="project-desc">Fintech remittance platform built solo in 3 months &mdash; now serving 600+ users with $50,000+ in international payments processed. Freelancers receive payments globally and cash out to Nigerian bank accounts in NGN. Features KYC verification, tiered VIP membership, rolling reserve compliance, bulk Paystack disbursement, and a full admin panel with revenue analytics.</p>
                     <div class="project-tags">
                         <span class="tag">TypeScript</span><span class="tag">Node.js</span><span class="tag">Express</span>
-                        <span class="tag">MongoDB</span><span class="tag">Next.js 15</span><span class="tag">React Native</span>
-                        <span class="tag">Paystack</span><span class="tag">Vercel</span>
+                        <span class="tag">MongoDB</span><span class="tag">Next.js 15</span><span class="tag">React Native/Expo</span>
+                        <span class="tag">Paystack</span><span class="tag">Cloudinary</span><span class="tag">Vercel</span>
                     </div>
                     <div class="project-actions">
                         <a href="https://github.com/vemregit" target="_blank" rel="noopener" class="btn btn-secondary btn-sm"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
@@ -708,14 +750,17 @@ section { padding: 96px 0; }
             </article>
 
             <article class="project-flagship fade-in" data-tags="fullstack mobile backend">
+                <div class="project-media">
+                    <div class="project-media-inner"><i class="fas fa-image" aria-hidden="true"></i><span>ErrandSort screenshots coming soon</span></div>
+                </div>
                 <div>
                     <div class="project-eyebrow">Marketplace &middot; Flagship Project</div>
                     <h3>ErrandSort &mdash; On-Demand Delivery &amp; Services Marketplace</h3>
-                    <p class="project-desc">Multi-role delivery and services marketplace: one shared backend serving five dedicated clients &mdash; customer mobile, customer web, admin dashboard, driver app, and vendor app.</p>
+                    <p class="project-desc">Multi-role delivery and services marketplace &mdash; one Express/PostgreSQL backend powering 5 separate client apps simultaneously: customer mobile, customer web, driver app, vendor app, and admin dashboard. Real-time order tracking and in-app chat via Socket.IO. Paystack checkout with webhook verification, Twilio OTP auth, and Railway deployment.</p>
                     <div class="project-tags">
                         <span class="tag">TypeScript</span><span class="tag">Node.js</span><span class="tag">PostgreSQL</span>
-                        <span class="tag">Prisma</span><span class="tag">Next.js 14</span><span class="tag">React Native</span>
-                        <span class="tag">Socket.IO</span><span class="tag">Railway</span>
+                        <span class="tag">Prisma</span><span class="tag">Next.js 14</span><span class="tag">React Native/Expo</span>
+                        <span class="tag">Socket.IO</span><span class="tag">Zustand</span><span class="tag">Paystack</span><span class="tag">Twilio</span>
                     </div>
                     <div class="project-actions">
                         <a href="https://github.com/vemregit" target="_blank" rel="noopener" class="btn btn-secondary btn-sm"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
@@ -759,14 +804,54 @@ section { padding: 96px 0; }
                     <a href="https://github.com/fasholatolulope3" target="_blank" rel="noopener" class="btn btn-secondary btn-sm"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
                 </div>
             </article>
-            <article class="project-card fade-in" data-tags="fullstack webapp">
-                <div class="project-tags"><span class="tag">Vue.js</span><span class="tag">Laravel</span><span class="tag">REST API</span></div>
-                <h4>Analytics Dashboard</h4>
-                <p>Real-time analytics presented through interactive charts and reporting views.</p>
-                <div class="project-actions" style="margin-top: 16px;">
-                    <a href="https://github.com/fasholatolulope3" target="_blank" rel="noopener" class="btn btn-secondary btn-sm"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+        </div>
+    </div>
+</section>
+
+<!-- Case Study -->
+<section class="case-study-section" id="case-study">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label"><i class="fas fa-magnifying-glass-chart" aria-hidden="true"></i> Case Study</span>
+            <h2 class="section-title">Vemre: Zero to 600+ Users in 3 Months</h2>
+            <p class="section-description">A closer look at building and shipping a live fintech platform solo, end to end.</p>
+        </div>
+        <div class="case-study-grid">
+            <div class="case-study-content fade-in">
+                <div class="case-study-block">
+                    <h5>The Challenge</h5>
+                    <p>Freelancers working with international clients needed a fast, compliant way to receive cross-border payments and convert them into Nigerian naira &mdash; with proper identity verification, fraud controls, and payout tooling that a small team could actually run.</p>
                 </div>
-            </article>
+                <div class="case-study-block">
+                    <h5>The Approach</h5>
+                    <p>I designed and built the entire platform solo: a Node.js/Express/TypeScript REST API on MongoDB with JWT authentication, a Next.js 15 customer dashboard, a React Native/Expo mobile app shipped to iOS and Android, and an internal admin panel &mdash; covering KYC verification, tiered VIP membership, rolling reserve compliance, and bulk Paystack disbursement, all from zero to production in three months.</p>
+                </div>
+                <div class="case-study-block">
+                    <h5>The Result</h5>
+                    <p>Vemre is live today, serving 600+ users who have moved over $50,000 in international payments through the platform &mdash; with an admin panel giving the team real-time visibility into revenue, compliance status, and payouts.</p>
+                </div>
+            </div>
+            <div class="case-study-stats">
+                <div class="case-stat-card fade-in"><div class="num">600+</div><div class="label">Platform Users</div></div>
+                <div class="case-stat-card fade-in"><div class="num">$50,000+</div><div class="label">Payments Processed</div></div>
+                <div class="case-stat-card fade-in"><div class="num">3 Months</div><div class="label">Solo, Zero to Production</div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials-section" id="testimonials">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label"><i class="fas fa-comment-dots" aria-hidden="true"></i> Testimonials</span>
+            <h2 class="section-title">What People Say</h2>
+        </div>
+        <div class="testimonial-card fade-in">
+            <div class="testimonial-avatar"><i class="fas fa-quote-left" aria-hidden="true"></i></div>
+            <p class="testimonial-quote needs-info">Testimonial quote coming soon.</p>
+            <div class="testimonial-name needs-info">Client Name</div>
+            <div class="testimonial-role needs-info">Role, Company</div>
         </div>
     </div>
 </section>
